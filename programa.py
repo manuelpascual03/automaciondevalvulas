@@ -536,7 +536,7 @@ elif st.session_state.seleccion == "Automatización de válvula existente":
         
 
         if limits == "Sí": 
-            diametro = float(st.session_state.diametro)
+            diametro = float(st.session_state.dicil)
 
             if diametro < 125:
                 codlimits = "0.900.009.103/210"
