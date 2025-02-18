@@ -37,7 +37,7 @@ def cargar_base_datos(ruta):
     return datos
 
 lista_base_de_datos = cargar_base_datos("basedatos.csv")
-esferica_tres = cargar_base_datos("/3vias.csv")
+esferica_tres = cargar_base_datos("3vias.csv")
 cilindros = cargar_base_datos("codigoscilindros2.csv")
 limit = cargar_base_datos("limits.csv")
 posicionadores = cargar_base_datos("posicionadores1.csv")
