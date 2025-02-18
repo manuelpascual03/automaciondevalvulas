@@ -538,9 +538,9 @@ elif st.session_state.seleccion == "Automatización de válvula existente":
         if limits == "Sí": 
             if str(st.session_state.diametro) < "125":
                 codlimits = "0.900.009.103/210"
-            elif str(st.session_state.diametro) >= "140" and st.session_state.diametro <= "250": 
+            if str(st.session_state.diametro) >= "140" and st.session_state.diametro <= "250": 
                 codlimits = "0.900.009.103/310"
-            elif str(st.session_state.diametro) >= "300" and st.session_state.diametro <= "400": 
+            if str(st.session_state.diametro) >= "300" and st.session_state.diametro <= "400": 
                 codlimits = "0.900.009.103/410"
             codilimits = (f"La caja Limit Switch a utilizar tiene código {codlimits}")
 
