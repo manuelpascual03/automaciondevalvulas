@@ -2,7 +2,6 @@ import pandas as pd
 import streamlit as st
 import base64
 import csv
-from tabulate import tabulate  
 from fractions import Fraction
 
 st.session_state.diametro=0
@@ -37,14 +36,14 @@ def cargar_base_datos(ruta):
             datos.append(fila)  
     return datos
 
-lista_base_de_datos = cargar_base_datos("excel/csv/basedatos.csv")
-esferica_tres = cargar_base_datos("excel/csv/3vias.csv")
-cilindros = cargar_base_datos("excel/csv/codigoscilindros2.csv")
-limit = cargar_base_datos("excel/csv/limits.csv")
-posicionadores = cargar_base_datos("excel/csv/posicionadores1.csv")
-esferica_dos = cargar_base_datos("excel/csv/bola1.csv")
-bobinas = cargar_base_datos("excel/csv/bobinas.csv")
-simpleefecto = cargar_base_datos("excel/csv/simpleefecto.csv")
+lista_base_de_datos = cargar_base_datos("basedatos.csv")
+esferica_tres = cargar_base_datos("3vias.csv")
+cilindros = cargar_base_datos("codigoscilindros2.csv")
+limit = cargar_base_datos("limits.csv")
+posicionadores = cargar_base_datos("posicionadores1.csv")
+esferica_dos = cargar_base_datos("bola1.csv")
+bobinas = cargar_base_datos("bobinas.csv")
+simpleefecto = cargar_base_datos("simpleefecto.csv")
 
 st.set_page_config(page_title="Automatización de Válvulas")
 
@@ -53,7 +52,7 @@ def fondo_de_pantalla():
         f"""
         <style>
         .stApp {{
-            background-image: url("data:image/jpeg;base64,{get_image_as_base64('static/fondo.jpg')}");
+            background-image: url("data:image/jpeg;base64,{get_image_as_base64('fondo.jpg')}");
             background-size: cover;
         }}
         </style>
