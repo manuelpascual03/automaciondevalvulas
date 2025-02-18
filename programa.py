@@ -52,7 +52,7 @@ def fondo_de_pantalla():
         f"""
         <style>
         .stApp {{
-            background-image: url("data:image/jpeg;base64,{get_image_as_base64('static/fondo.jpg')}");
+            background-image: url("data:image/jpeg;base64,{get_image_as_base64('fondo.jpg')}");
             background-size: cover;
         }}
         </style>
