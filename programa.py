@@ -26,7 +26,10 @@ flag = 0
 check = False
 codicilde = ""
 codicilse = ""
-
+conexion = ""
+codval= ""
+cuadtresvias = ""
+tresvias = ""
 
 def cargar_base_datos(ruta):
     datos = []
